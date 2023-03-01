@@ -1,0 +1,185 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position:absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+    right: -262px;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-image: url(bg.jpg);
+background-position:center;
+position: absolute;
+overflow-x: hidden;
+}
+
+.topnav {
+    padding-left: 250px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.topnav a{
+
+    opacity: 1;
+
+}
+
+.topnav a {
+float: left;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px; 
+}
+
+.topnav a:last-child {
+
+    margin-left: 90px;
+    float: right;
+
+}
+.topnav a:hover {
+    background-color:rgb(32, 8, 8);
+    color: white;
+}
+
+ .topnav a.active { 
+    background-color: rgb(50, 18, 18);
+   color: rgb(255, 255, 255);
+}
+
+.content h1{
+
+    color: white;
+    margin-left: 500px;
+    text-decoration: underline;
+
+}
+
+div.gallery {
+    margin: 2PX;
+    border: 1px solid #ccc;
+    float: right;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+
+  }
+  
+  div.desc {
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .mapa {
+
+    padding-top: 400px;
+    text-align: center;
+
+
+  }
+  .footer {
+    clear: both;
+    margin-top: 0px;
+    width: 135%;
+    padding: 30px 15%;
+    margin-top: 20px;
+    background: rgb(133, 133, 133);
+    color: white;
+    display: flex;
+}
+.footer h3 {
+    color: #333;
+}
+.footer div {
+    text-align: center;
+}
+.col2 {
+    flex-grow: 2;
+}
+.col2 a {
+    color: #333;
+    text-decoration: none;
+}
+.col2 li {
+    text-decoration: none;
+    list-style: none;
+}
+.col2 ul{
+    display: inline;
+}
+.col1 a {
+    text-decoration: none;
+    color:#333;
+}
+.col3 a {
+    text-decoration: none;
+    color:#333;
+}
